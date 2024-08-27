@@ -204,4 +204,4 @@ I ditt MongoDb-kluster i [Atlas](https://cloud.mongodb.com) skapades automatiskt
 - Skapa även en endpoint som plockar ut de 50 filmer med högst betyg i en specifik genre.
 - Skapa en endpoint som plockar ut de 25 filmer med högst betyg för ett specifikt år.
 - Gör en frontend som använder dessa endpoint och visar filmerna med dess namn och poster.
-- Använd paginering så att alla 100 filmer inte visas på samtidigt så 10 filmer visas åt gången och man får bläddre mellan sidorna.
+- Använd paginering så att alla 100 filmer inte visas samtidigt utan 10 filmer visas åt gången och man får bläddre mellan sidorna.
