@@ -14,7 +14,7 @@ const createAnimal = async (animal) => {
 };
 
 const updateAnimal = async (id, animal) => {
-  return AnimalModel.findByIdAndUpdate(id, animal, { new: true });
+  return AnimalModel.findByIdAndUpdate(id, animal);
 };
 
 const deleteAnimal = async (id) => {

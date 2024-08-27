@@ -18,7 +18,7 @@ paginate: true
 
 ---
 
-# Dagens agenda
+## Dagens agenda
 
 - Mongoose
   - Vad är det?
@@ -26,15 +26,16 @@ paginate: true
   - Schema
   - Model
   - Queries
-- Komma igång med Workbook - fortsättning imorgon under workshopdagen
+- Komma igång med morgondagens Workshop - fortsättning imorgon under workshopdagen
 
 ---
 
-# Mongoose
+## Mongoose
 
-- **npm-paket**
+- npm-paket som vi använder i nodeJS
 - ODM – Object document mapping
-- Ansluter mot MongoDB
+  - Motsvarar ORM för SQL som t.ex. Prisma
+- Ansluter till MongoDB
 - Mappar Document i databasen mot Object i JavaScript / TypeScript
 - Mer info: [https://mongoosejs.com/](https://mongoosejs.com/)
 
@@ -42,56 +43,49 @@ paginate: true
 
 ---
 
-# Mongoose - Connection
+## Mongoose - Connection
 
-- För att ansluta mot MongoDB krävs en anslutning
+- För att ansluta mot MongoDB krävs en anslutning (connection string/kopplingssträng)
 - Connection string är en URI som innehåller all information om databasen man ska ansluta till, t.ex:
-  - Host (i exemplet localhost)
-  - Port (i exemplet 27017)
+  - Host (mongodb+srv://cluster0.x4lmd.mongodb.net)
   - Databasnamn (i exemplet zoo)
+  - Användaruppgifter (username/password)
 
 ---
 
-# Mongoose - Schema
+## Mongoose - Schema och model
 
 - I kod definieras ett **schema**
 - Varje schema mappas mot ett dokument i MongoDB
-- Eftersom vi använder TypeScript måste vi också skapa ett interface som motsvarar schemat
+- Med schemat så skapar vi model-objekt som representerar ett dokument i vår collection
 
 ---
 
-# Mongoose - Model
+## Mongoose - Queries
 
-- För att använda ett schema måste vi skapa en **model** utifrån det
-- Även här refererar vi till **interfacet** vi har skapat
-
----
-
-# Mongoose - Queries
-
-- När vi skapat ett schema och en model kan vi använda **queries** för att:
-  - Hämta
-  - Lägga till
-  - Uppdatera
-  - Ta bort
+- När vi skapat ett schema och ett model-objekt kan vi använda **queries** för att:
+  - GET med .find() och findById(id)
+  - CREATE med .save()
+  - PUT med .findByIdAndUpdate(id)
+  - DELETE med .deleteAnimal(id)
 
 ---
 
-# Mongoose - Queries
+## Mongoose - Queries
 
 - I Mongoose-dokumentationen finns exempel på alla queries:
   - [https://mongoosejs.com/docs/queries.html](https://mongoosejs.com/docs/queries.html)
 
 ---
 
-# Demo
+## Demo
 
 ---
 
-# Workbook
+## Workbook
 
 - Nu är det dags för er att skapa ett REST-api med Mongoose
 - Följ instruktionerna som ligger i readme i Workbook-repot:
-  - [https://github.com/jonatanhallenberg/mongoose-workbook](https://github.com/jonatanhallenberg/mongoose-workbook)
+  - [https://github.com/flindr2/mongoose](https://github.com/flindr2/mongoose)
 
 ---
