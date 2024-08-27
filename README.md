@@ -198,7 +198,7 @@ När ni gjort endpoints för alla CRUD-operationer och koden fungerar är det da
 
 ## Svårare uppgift
 
-I ditt MongoDb-kluster i [Atlas](https://cloud.mongodb.com) skapades automatiskt en testdatabas som heter `sample_mflix` och där en collection `movies`. `movies` har två dokument `imdb` och `tomatoes` som har betyg för alla filmer.
+I ditt MongoDb-kluster i [Atlas](https://cloud.mongodb.com) skapades automatiskt en testdatabas som heter `sample_mflix` med en collection `movies`. `movies` har två dokument `imdb` och `tomatoes` som har betyg för alla filmer.
 
 - Skapa ett API med en endpoint som plockar ut de 100 filmer med högst betyg (IMDB eller Rotten Tomatoes)
 - Skapa även en endpoint som plockar ut de 50 filmer med högst betyg i en specifik genre.
