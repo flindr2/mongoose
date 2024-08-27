@@ -7,7 +7,7 @@ paginate: true
 
 # Mongoose
 
-## Backendutveckling del 2
+## Backendutveckling och APIer del 2
 
 ---
 
@@ -87,5 +87,3 @@ paginate: true
 - Nu är det dags för er att skapa ett REST-api med Mongoose
 - Följ instruktionerna som ligger i readme i Workbook-repot:
   - [https://github.com/flindr2/mongoose](https://github.com/flindr2/mongoose)
-
----
