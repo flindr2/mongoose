@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const animalsRouter = require("./routes/animals");
 
 mongoose.connect("mongodb+srv://cluster0.x4lmd.mongodb.net/zoo", {
-    user: "fredriklindroth",
-    pass: "4XHU0JIURD2huwS5",
+    user: "username",
+    pass: "password",
 });
 
 const app = express();
