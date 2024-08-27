@@ -18,7 +18,7 @@ Ni använder er av följande komponenter:
 - __MongoDB__ är databasen där ni lagrar data som postas in via api:et
 - __Mongoose__ är ett npm-paket ni använder för att ansluta och skicka frågor till databasen.
 
-## Sätta upp TS-miljön
+## Sätta upp miljön
 
 1. Skapa en katalog och öppna den med VSCode, starta terminalen och skriv:
 
@@ -195,3 +195,13 @@ När ni gjort endpoints för alla CRUD-operationer och koden fungerar är det da
 - Bryt ut konfigurerbara värden (t.ex. Connection URI) i en .env-fil och läs in med hjälp av dotenv (<https://www.npmjs.com/package/dotenv>)
 - Lägg till validering av input-data. Använd t.ex. express-validator (<https://express-validator.github.io/docs/>).
 - Se till att rätt statuskoder returneras beroende på metod och utfall.
+
+## Svårare uppgift
+
+I ditt MongoDb-kluster i [Atlas](https://cloud.mongodb.com) skapades automatiskt en testdatabas som heter `sample_mflix` och där en collection `movies`. `movies` har två dokument `imdb` och `tomatoes` som har betyg för alla filmer.
+
+- Skapa ett API med en endpoint som plockar ut de 100 filmer med högst betyg (IMDB eller Rotten Tomatoes)
+- Skapa även en endpoint som plockar ut de 50 filmer med högst betyg i en specifik genre.
+- Skapa en endpoint som plockar ut de 25 filmer med högst betyg för ett specifikt år.
+- Gör en frontend som använder dessa endpoint och visar filmerna med dess namn och poster.
+- Använd paginering så att alla 100 filmer inte visas på samtidigt så 10 filmer visas åt gången och man får bläddre mellan sidorna.
