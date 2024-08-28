@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const animalsRouter = require("./routes/animals");
 
-mongoose.connect("mongodb+srv://cluster0.x4lmd.mongodb.net/zoo", {
+mongoose.connect("mongodb+srv://url-till-er-databas/zoo", {
     user: "username",
     pass: "password",
 });
